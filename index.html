@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Network Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f6f9;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+    input[type="text"] {
+      width: 320px;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-size: 18px;
+      background-color: #dceeff;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 20px;
+      width: fit-content;
+      color: #1a4a7a;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Network Overview</h1>
+  <input type="text" id="search" placeholder="Search (Shortcut: Space + S)" />
+
+  <details open>
+    <summary>Air Parrot IP</summary>
+    <table id="deviceTable">
+      <thead>
+        <tr><th>Location</th><th>IP Address</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>HR Office</td><td>172.16.0.132</td></tr>
+        <tr><td>Procurement Office</td><td>172.16.0.85</td></tr>
+        <tr><td>Estate Office (2nd Floor)</td><td>172.16.0.86</td></tr>
+        <tr><td>Deputy Principal Office</td><td>172.16.0.87</td></tr>
+        <tr><td>Board Consultant Office</td><td>172.16.0.88</td></tr>
+        <tr><td>Backup Printer</td><td>172.16.0.89</td></tr>
+        <!-- Add more if needed -->
+      </tbody>
+    </table>
+  </details>
+
+  <details open>
+    <summary>Printers</summary>
+    <table id="printerTable">
+      <thead>
+        <tr><th>Printer Location</th><th>IP Address</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>EAL workroom</td><td><a href="http://172.16.0.90" target="_blank">172.16.0.90</a></td></tr>
+        <tr><td>SEN Work Room</td><td><a href="http://172.16.0.93" target="_blank">172.16.0.93</a></td></tr>
+        <tr><td>Health Room</td><td><a href="http://172.16.0.94" target="_blank">172.16.0.94</a></td></tr>
+        <tr><td>Engineering Room</td><td><a href="http://172.16.0.97" target="_blank">172.16.0.97</a></td></tr>
+        <tr><td>Estate Facility Office</td><td><a href="http://172.16.0.99" target="_blank">172.16.0.99</a></td></tr>
+        <tr><td>Sports Workroom</td><td><a href="http://172.16.0.108" target="_blank">172.16.0.108</a></td></tr>
+        <tr><td>Human and Social Work Room</td><td><a href="http://172.16.0.119" target="_blank">172.16.0.119</a></td></tr>
+        <tr><td>Art Workroom</td><td><a href="http://172.16.0.120" target="_blank">172.16.0.120</a></td></tr>
+        <tr><td>Counselling Room</td><td><a href="http://172.16.0.121" target="_blank">172.16.0.121</a></td></tr>
+        <tr><td>Accounts Room (Shankar)</td><td><a href="http://172.16.0.122" target="_blank">172.16.0.122</a></td></tr>
+        <tr><td>Innovation Lounge Printer</td><td><a href="http://172.16.0.123" target="_blank">172.16.0.123</a></td></tr>
+        <tr><td>Textbook Room</td><td><a href="http://172.16.0.111" target="_blank">172.16.0.111</a></td></tr>
+        <tr><td>Foodmanager Room</td><td><a href="http://172.16.0.125" target="_blank">172.16.0.125</a></td></tr>
+        <tr><td>IT Room</td><td><a href="http://172.16.0.189" target="_blank">172.16.0.189</a></td></tr>
+        <tr><td>Admission Office</td><td><a href="http://172.16.0.188" target="_blank">172.16.0.188</a></td></tr>
+        <tr><td>Secondary Library</td><td><a href="http://172.16.0.185" target="_blank">172.16.0.185</a></td></tr>
+        <tr><td>Science/English Work Room</td><td><a href="http://172.16.0.192" target="_blank">172.16.0.192</a></td></tr>
+        <tr><td>Primary Staff Room</td><td><a href="http://172.16.0.187" target="_blank">172.16.0.187</a></td></tr>
+        <tr><td>Primary Principal Office</td><td><a href="http://172.16.0.184" target="_blank">172.16.0.184</a></td></tr>
+        <tr><td>Primary Library</td><td><a href="http://172.16.0.186" target="_blank">172.16.0.186</a></td></tr>
+        <tr><td>KS3 & MFL Work Room</td><td><a href="http://172.16.0.183" target="_blank">172.16.0.183</a></td></tr>
+        <tr><td>IB Center</td><td><a href="http://172.16.0.191" target="_blank">172.16.0.191</a></td></tr>
+        <tr><td>Cr1 & 2</td><td><a href="http://172.16.0.182" target="_blank">172.16.0.182</a></td></tr>
+        <tr><td>Art1 & 2 Classroom</td><td><a href="http://172.16.0.190" target="_blank">172.16.0.190</a></td></tr>
+        <tr><td>Director</td><td><a href="http://172.16.0.118" target="_blank">172.16.0.118</a></td></tr>
+        <tr><td>Director Office</td><td><a href="http://172.16.0.98" target="_blank">172.16.0.98</a></td></tr>
+        <tr><td>Security Office</td><td><a href="http://172.16.0.106" target="_blank">172.16.0.106</a></td></tr>
+        <tr><td>Accounts Room</td><td><a href="http://172.16.0.100" target="_blank">172.16.0.100</a></td></tr>
+        <tr><td>Secondary Principal Office (Deepa)</td><td><a href="http://172.16.0.129" target="_blank">172.16.0.129</a></td></tr>
+        <tr><td>KS4 Office</td><td><a href="http://172.16.0.198" target="_blank">172.16.0.198</a></td></tr>
+        <tr><td>Math Work Room</td><td><a href="http://172.16.0.92" target="_blank">172.16.0.92</a></td></tr>
+        <tr><td>KS5</td><td><a href="http://172.16.0.101" target="_blank">172.16.0.101</a></td></tr>
+      </tbody>
+    </table>
+  </details>
+
+  <script>
+    const searchInput = document.getElementById('search');
+
+    function filterTables() {
+      const filter = searchInput.value.toLowerCase();
+      document.querySelectorAll("table tbody tr").forEach(row => {
+        row.style.display = row.innerText.toLowerCase().includes(filter) ? "" : "none";
+      });
+    }
+
+    searchInput.addEventListener("input", filterTables);
+
+    // Space + S shortcut
+    document.addEventListener("keydown", function(e) {
+      if (e.code === "KeyS" && e.getModifierState("Space")) {
+        e.preventDefault();
+        searchInput.focus();
+      }
+    });
+  </script>
+
+</body>
+</html>
